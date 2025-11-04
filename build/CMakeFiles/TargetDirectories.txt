@@ -1,0 +1,3 @@
+/mnt/c/Users/Andreea/Desktop/paoo/build/CMakeFiles/Person.dir
+/mnt/c/Users/Andreea/Desktop/paoo/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Andreea/Desktop/paoo/build/CMakeFiles/rebuild_cache.dir
