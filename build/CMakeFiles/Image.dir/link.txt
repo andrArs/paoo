@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/Image.dir/src/main.cpp.o CMakeFiles/Image.dir/src/Image.cpp.o -o Image 
+/usr/bin/c++ CMakeFiles/Image.dir/src/main.cpp.o CMakeFiles/Image.dir/src/Image.cpp.o CMakeFiles/Image.dir/src/ColoredImage.cpp.o -o Image 

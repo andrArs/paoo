@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(SOURCES
     src/main.cpp
     src/Image.cpp
+    src/ColoredImage.cpp
 )
 
 add_executable(Image ${SOURCES})

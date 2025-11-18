@@ -14,6 +14,8 @@ public:
     Image& operator=(const Image& other);
     ~Image();
 
+    std::string getFilename() const;
+
     void print() const;
 };
 

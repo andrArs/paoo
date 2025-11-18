@@ -1,5 +1,5 @@
 #include "Image.h"
-// #include "ColoredImage.h"
+#include "ColoredImage.h"
 #include <iostream>
 
 int main() {
@@ -37,6 +37,17 @@ int main() {
     original.print();
     backup.print();
 
+    std::cout << "\nITEM 12: Copy all parts (inheritance – ColoredImage)\n";
+    unsigned char p_color[] = {1, 2, 3, 4, 5, 6};
+    ColoredImage ci1("Photo.png", p_color, 6, 32);
+    ci1.print();
+
+    ColoredImage ci2 = ci1; // copy constructor
+    ci2.print();
+
+    ColoredImage ci3("Temp.png", nullptr, 0, 24);
+    ci3 = ci1; // copy assignment
+    ci3.print();
     
     return 0;
 }

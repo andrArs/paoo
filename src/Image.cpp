@@ -71,13 +71,13 @@ Image& Image::operator=(const Image& other)
 
 Image::~Image()
 {
-    cout << "\nDestructor: Destroying Image: " << filename << endl;
+    cout << "Destructor: Destroying Image: " << filename << endl;
     delete[] pixels;
 }
 
 void Image::print() const
 {
-    cout << "\nImage: " << filename << ", Size: ";
+    cout << "Image: " << filename << ", Size: ";
     if (pixels == nullptr) {
         cout << "(empty)\n";
         return;
@@ -87,4 +87,8 @@ void Image::print() const
     for (int i = 0; i < size; i++)
         cout << static_cast<int>(pixels[i]) << " ";
     cout << "\n";
+}
+
+std::string Image::getFilename() const {
+    return filename;
 }

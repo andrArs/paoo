@@ -129,6 +129,30 @@ Image/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image.dir/build.make CMakeFiles/Image.dir/build
 .PHONY : Image/fast
 
+src/ColoredImage.o: src/ColoredImage.cpp.o
+.PHONY : src/ColoredImage.o
+
+# target to build an object file
+src/ColoredImage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image.dir/build.make CMakeFiles/Image.dir/src/ColoredImage.cpp.o
+.PHONY : src/ColoredImage.cpp.o
+
+src/ColoredImage.i: src/ColoredImage.cpp.i
+.PHONY : src/ColoredImage.i
+
+# target to preprocess a source file
+src/ColoredImage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image.dir/build.make CMakeFiles/Image.dir/src/ColoredImage.cpp.i
+.PHONY : src/ColoredImage.cpp.i
+
+src/ColoredImage.s: src/ColoredImage.cpp.s
+.PHONY : src/ColoredImage.s
+
+# target to generate assembly for a file
+src/ColoredImage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image.dir/build.make CMakeFiles/Image.dir/src/ColoredImage.cpp.s
+.PHONY : src/ColoredImage.cpp.s
+
 src/Image.o: src/Image.cpp.o
 .PHONY : src/Image.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Image"
+	@echo "... src/ColoredImage.o"
+	@echo "... src/ColoredImage.i"
+	@echo "... src/ColoredImage.s"
 	@echo "... src/Image.o"
 	@echo "... src/Image.i"
 	@echo "... src/Image.s"
