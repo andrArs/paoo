@@ -86,5 +86,6 @@ void Image::print() const
     cout << size << " bytes, Pixels: ";
     for (int i = 0; i < size; i++)
         cout << static_cast<int>(pixels[i]) << " ";
-    cout << "\n";
+    cout << "\n";  
+    
 }
