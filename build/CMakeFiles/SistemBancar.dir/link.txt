@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/SistemBancar.dir/src/main.cpp.o CMakeFiles/SistemBancar.dir/src/Banca.cpp.o -o SistemBancar 
