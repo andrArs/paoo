@@ -16,8 +16,6 @@ public:
 // consumator 1 
 class HeadChef {
 public:
-    // folosim shared_ptr pentru ca resursa (cartea) este impartita cu altii
-    // Item 13: nu gestionam manual pointerul (new/delete), lasam obiectul shared_ptr sa o faca
     std::shared_ptr<SecretRecipeBook> book;
     
     HeadChef(std::shared_ptr<SecretRecipeBook> b);

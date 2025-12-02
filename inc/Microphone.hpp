@@ -7,17 +7,14 @@
 #include <chrono>
 
 // ITEM 14: Think carefully about copying behavior in resource-managing classes.
-// gestioneaza un Lock 
 class MicrophoneLock {
 private:
     std::mutex& mutexRef;
 
 public:
-    // Resource Acquisition Is Initialization (RAII)
-    // Blocam mutexul in momentul crearii obiectului.
+   
     explicit MicrophoneLock(std::mutex& m);
 
-    // Deblocam mutexul automat la distrugere.
     ~MicrophoneLock();
 
     MicrophoneLock(const MicrophoneLock&) = delete; // No Copy Constructor
